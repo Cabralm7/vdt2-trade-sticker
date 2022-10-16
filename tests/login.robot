@@ -45,7 +45,7 @@ Try login without password (Sad way)
     [Tags]                    without_pass
 
     Go To Page Login
-    Submite Email             papito@gmail.com
+    Submite Credentials       papito@gmail.com    ${EMPTY}
     Toast Message Should Be   Por favor, informe a sua senha secreta!
 
 
@@ -53,7 +53,7 @@ Try login without email (Sad way)
     [Tags]                    without_email
 
     Go To Page Login
-    Submite Password          vaibrasil
+    Submite Credentials       ${EMPTY}    vaibrasil
     Toast Message Should Be   Por favor, informe o seu email!
 
 
@@ -61,5 +61,5 @@ Try login with any credentials (Sad way)
     [Tags]                    any_credentials
 
     Go To Page Login
-    Button Entry
+    Submite Credentials       ${EMPTY}    ${EMPTY}
     Toast Message Should Be    Por favor, informe suas credenciais!

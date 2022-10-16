@@ -13,19 +13,6 @@ Submite Credentials
     Fill Text                 css=input[name=password]     ${password}
     Click                     css=button >> text=Entrar
 
-Submite Email
-    [Arguments]               ${email}
-    Fill Text                 css=input[name=email]        ${email}
-    Click                     css=button >> text=Entrar
-
-Submite Password
-    [Arguments]               ${password}
-    Fill Text                 css=input[name=password]        ${password}
-    Click                     css=button >> text=Entrar
-
-Button Entry
-    Click                     css=button >> text=Entrar
-
 Remember
     Check Checkbox            text=Lembrar meus dados
 
