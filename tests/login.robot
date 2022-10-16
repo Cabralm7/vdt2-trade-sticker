@@ -17,6 +17,14 @@ Login in Sticker (Happy way)
     User Logged In
     
 
+Login in Sticker with remember my credentials
+    [Tags]                login_and_remember
+
+    Go To Page Login
+    Remember
+    Submite Credentials    papito@gmail.com    vaibrasil
+    User Logged In
+
 Can't login in Sticker with wrong password (Sad way)
     [Tags]                     inv_password
 
@@ -33,16 +41,25 @@ Can't login in Sticker with wrong email (Sad way)
     Toast Message Should Be    Credenciais inválidas, tente novamente!
 
 
+Try login without password (Sad way)
+    [Tags]                    without_pass
+
+    Go To Page Login
+    Submite Email             papito@gmail.com
+    Toast Message Should Be   Por favor, informe a sua senha secreta!
+
+
+Try login without email (Sad way)
+    [Tags]                    without_email
+
+    Go To Page Login
+    Submite Password          vaibrasil
+    Toast Message Should Be   Por favor, informe o seu email!
+
+
 Try login with any credentials (Sad way)
     [Tags]                    any_credentials
 
     Go To Page Login
     Button Entry
     Toast Message Should Be    Por favor, informe suas credenciais!
-
-
-Click in remember my credentials
-    [Tags]                    remember
-
-    Go To Page Login
-    Remember
