@@ -14,7 +14,7 @@ Do login
     User Logged In
 
 Start Test
-    New Browser            headless=False
+    New Browser            headless=False      browser=${BROWSER}
 
 Finish Test
     Sleep                  1s
